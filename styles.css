@@ -30,22 +30,18 @@ html{
   justify-content: center;
   align-items: center;
   margin-bottom: 2em;
+  color:#fff;
 }
 
-.response input{
+#result{
+  padding-top:2em;
+  min-width: 40em;
+  min-height: 4em;
   border: 1px solid #fff;
   background: transparent;
-  width: 40em;
-  height: 6em;
   text-align: center;
-}
-
-.response input:focus{
-  outline: none;
-}
-.response p{
   color:#fff;
-  font-size: 4em;
+  font-weight: 700;
 }
 
 .result{
@@ -59,20 +55,24 @@ html{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-sizing: content-box;
+  font-weight: 700;
 }
+
 .container button{
   cursor: pointer;
-  border: 1px dotted #eee;
+  border: 1px thin #eee;
   background: transparent;
   min-width: 10em;
   min-height: 4em;
   color: #fff;
+  font-weight: 700;
 }
 
 .container button:hover{
   cursor: pointer;
   opacity: .6;
-  border: 1px dotted #eee;
+  border: 1px thin #eee;
   background: #fff;
   color:#000;
   transition: 1s;
