@@ -15,42 +15,47 @@
 </head>
 
 <body>
-  <div id="container">
-    <h1>Calculadora 🔢</h1>
-    <span>Aplicando conhecimentos</span>
+  <div id="header">
+    <div id="animate">
+      <h1>Calculadora 🔢</h1>
+      <span>Aplicando conhecimentos</span>
+    </div>
   </div>
 
   <div class="response">
     <input value='' />
   </div>
-
-  <table>
-    <tr>
-      <td value="1">1</td>
-      <td value="">2</td>
-      <td value="3">3</td>
-      <td class="operations" value="+">+</td>
-    </tr>
-    <tr>
-      <td value="4">4</td>
-      <td value="5">5</td>
-      <td value="6">6</td>
-      <td class="operations" value="-">-</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-      <td class="operations" value="/">/</td>
-    </tr>
-    <td>(</td>
-    <td>0</td>
-    <td>)</td>
-    <td class="operations" value="*">x</td>
-  </table>
-  <div id="options">
-    <button type="submit" id="ok">Calcular</button>
-    <button type="reset" id="notOk">Limpar</button>
+  <div id="display">
+    <div class="container">
+      <button id="clear">C</button>
+      <button id="openParenthesis">(</button>
+      <button id="closeParenthesis">)</button>
+      <button id="division">/</button>
+    </div>
+    <div class="container">
+      <button id="one" value="1">1</button>
+      <button id="two" value="2">2</button>
+      <button id="three" value="3">3</button>
+      <button id="multi" value="*">*</button>
+    </div>
+    <div class="container">
+      <button id="four" value="4">4</button>
+      <button id="five" value="5">5</button>
+      <button id="six" value="6">6</button>
+      <button id="less" value="-">-</button>
+    </div>
+    <div class="container">
+      <button id="seven" value="7">7</button>
+      <button id="eight" value="8">8</button>
+      <button id="nine" value="9">9</button>
+      <button id="plus">+</button>
+    </div>
+    <div class="container">
+      <button id="comma" value=",">,</button>
+      <button id="zero" value="0">0</button>
+      <button id="point" value=".">.</button>
+      <button id="equal">=</button>
+    </div>
   </div>
 </body>
 

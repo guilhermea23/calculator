@@ -2,7 +2,7 @@ html{
   background: #504750;
 }
 
-#container{
+#header{
   color:#eee;
   display: flex;
   justify-content: center;
@@ -10,14 +10,20 @@ html{
   font-weight: 700;
   margin-bottom: 4em;
   cursor:pointer;
+  border: 1px solid transparent;
 }
 
-#container:hover{
-  color:#6bbd7d;
-  font-weight: 700;
+#animate{
+  border: 1px solid transparent;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: #eee;
 }
-span{
-  color: #bbb;
+#animate:hover{
+  border: 1px solid #6bbd7d;
+  color: #6bbd7d;
+  transition: 2s;
+  border-radius: 1em;
 }
 .response{
   display: flex;
@@ -47,69 +53,42 @@ span{
   width: 10em;
   height: 6em;
 }
-table{
-  color:#eee;
-  font-family: 'Dongle', sans-serif;
-  font-size: 4em;
-  font-weight: 200;
+
+#display{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-
-tr{
-  margin: 0;
-  padding: 0;
-}
-
-td{
-  padding-left: 1em;
-  padding-right: 1em;
-  font-weight: bolder;
-}
-td:hover{
-  border: 1px dotted transparent;
-  cursor:pointer;
-  background: #eee;
-  color:#504750;
-  font-weight: bolder;
-}
-
-.operations:hover{
-  background: #6bbd7d;
-  color:#eee;
-  font-weight: bolder;
-
-}
-
-#options{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2em;
-  font-weight: 400;
-}
-
-#options{
-  display: flex;
-  justify-content: space-evenly;
-}
-button{
-  min-width: 10em;
-  height: 4em;
-  background: transparent;
-  border:none;
-  color: #eee;
-  font-weight: bolder;
-}
-button#ok:hover{
+.container button{
   cursor: pointer;
+  border: 1px dotted #eee;
+  background: transparent;
+  min-width: 10em;
+  min-height: 4em;
+  color: #fff;
+}
+
+.container button:hover{
+  cursor: pointer;
+  opacity: .6;
+  border: 1px dotted #eee;
+  background: #fff;
+  color:#000;
+  transition: 1s;
+  font-weight: bolder;
+}
+
+#equal{
+  background: #6bbd7d;
+  color: #fff;
+  font-weight: bolder;
+  border: 1px solid transparent;
+}
+
+#equal:hover{
+  background: #fff;
   color:#6bbd7d;
   font-weight: bolder;
-}
-
-button#notOk:hover{
-  cursor: pointer;
-  color:#f33;
-  font-weight: bolder;
+  transition: 1s;
 }
