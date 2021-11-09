@@ -25,30 +25,25 @@ html{
   transition: 2s;
   border-radius: 1em;
 }
-.response{
+.result{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2em;
-  color:#fff;
 }
-
-#result{
-  padding-top:2em;
-  min-width: 40em;
-  min-height: 4em;
+.result p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36em;
+  height: 6em;
   border: 1px solid #fff;
   background: transparent;
   text-align: center;
   color:#fff;
   font-weight: 700;
+  border:1px solid #fff;
 }
 
-.result{
-  border:1px solid transparent;
-  width: 10em;
-  height: 6em;
-}
 
 #display{
   display: flex;
