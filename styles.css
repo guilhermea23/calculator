@@ -1,0 +1,115 @@
+html{
+  background: #504750;
+}
+
+#container{
+  color:#eee;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: 700;
+  margin-bottom: 4em;
+  cursor:pointer;
+}
+
+#container:hover{
+  color:#6bbd7d;
+  font-weight: 700;
+}
+span{
+  color: #bbb;
+}
+.response{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.response input{
+  border: 1px solid #fff;
+  background: transparent;
+  width: 40em;
+  height: 6em;
+  text-align: center;
+}
+
+.response input:focus{
+  outline: none;
+}
+.response p{
+  color:#fff;
+  font-size: 4em;
+}
+
+.result{
+  border:1px solid transparent;
+  width: 10em;
+  height: 6em;
+}
+table{
+  color:#eee;
+  font-family: 'Dongle', sans-serif;
+  font-size: 4em;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+tr{
+  margin: 0;
+  padding: 0;
+}
+
+td{
+  padding-left: 1em;
+  padding-right: 1em;
+  font-weight: bolder;
+}
+td:hover{
+  border: 1px dotted transparent;
+  cursor:pointer;
+  background: #eee;
+  color:#504750;
+  font-weight: bolder;
+}
+
+.operations:hover{
+  background: #6bbd7d;
+  color:#eee;
+  font-weight: bolder;
+
+}
+
+#options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  font-weight: 400;
+}
+
+#options{
+  display: flex;
+  justify-content: space-evenly;
+}
+button{
+  min-width: 10em;
+  height: 4em;
+  background: transparent;
+  border:none;
+  color: #eee;
+  font-weight: bolder;
+}
+button#ok:hover{
+  cursor: pointer;
+  color:#6bbd7d;
+  font-weight: bolder;
+}
+
+button#notOk:hover{
+  cursor: pointer;
+  color:#f33;
+  font-weight: bolder;
+}
