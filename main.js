@@ -1,9 +1,3 @@
-localStorage.setItem("formula", 0)
-input = document.getElementById("result")
-input.addEventListener("change", (e) => {
-  localStorage.setItem("formula", e.target.value)
-  i += 1
-})
 header = document.getElementById("animate")
 header.addEventListener("click", function () {
   window.open("https://www.github.com/guilhermea23", "_blank")
@@ -157,4 +151,13 @@ buttonPoint.addEventListener("click", (e) => {
   input.innerHTML += " "
   input.innerHTML += e.target.value
   input.innerHTML += " "
+})
+
+buttonEqual.addEventListener("click", () => {
+  buttonEqual.disabled = true
+  input = document.getElementById("result")
+  formula = input.textContent
+  formula = formula.split(" ").join("")
+  input.innerHTML += " = "
+  input.innerHTML += eval(formula)
 })

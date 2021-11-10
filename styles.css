@@ -9,7 +9,6 @@ html{
   align-items: flex-end;
   font-weight: 700;
   margin-bottom: 4em;
-  cursor:pointer;
   border: 1px solid transparent;
 }
 
@@ -24,6 +23,7 @@ html{
   color: #6bbd7d;
   transition: 2s;
   border-radius: 1em;
+  cursor: pointer;
 }
 .result{
   display: flex;
