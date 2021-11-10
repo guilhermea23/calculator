@@ -160,4 +160,22 @@ buttonEqual.addEventListener("click", () => {
   formula = formula.split(" ").join("")
   input.innerHTML += " = "
   input.innerHTML += eval(formula)
+  buttonOpenParenthesis.disabled = true;
+  buttonCloseParenthesis.disabled = true;
+  buttonDivision.disabled = true;
+  buttonMulti.disabled = true;
+  buttonPlus.disabled = true;
+  buttonLess.disabled = true;
+  button1.disabled = true;
+  button2.disabled = true;
+  button3.disabled = true;
+  button4.disabled = true;
+  button5.disabled = true;
+  button6.disabled = true;
+  button7.disabled = true;
+  button8.disabled = true;
+  button9.disabled = true;
+  button0.disabled = true;
+  buttonComma.disabled = true;
+  buttonPoint.disabled = true;
 })
