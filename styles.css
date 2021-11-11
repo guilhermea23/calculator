@@ -21,7 +21,7 @@ html{
 #animate:hover{
   border: 1px solid #6bbd7d;
   color: #6bbd7d;
-  transition: 2s;
+  transition: 1s;
   border-radius: 1em;
   cursor: pointer;
 }
@@ -30,6 +30,7 @@ html{
   justify-content: center;
   align-items: center;
 }
+
 .result p{
   display: flex;
   justify-content: center;
@@ -56,7 +57,7 @@ html{
 
 .container button{
   cursor: pointer;
-  border: 1px thin #eee;
+  border: 1px thick transparent;
   background: transparent;
   min-width: 10em;
   min-height: 4em;
@@ -67,9 +68,9 @@ html{
 .container button:hover{
   cursor: pointer;
   opacity: .6;
-  border: 1px thin #eee;
+  border: 1px thin transparent;
   background: #fff;
-  color:#000;
+  color:#504750;
   transition: 1s;
   font-weight: bolder;
 }
@@ -82,8 +83,8 @@ html{
 }
 
 #equal:hover{
-  background: #fff;
-  color:#6bbd7d;
+  opacity: .7;
+  border: 1px solid transparent;
   font-weight: bolder;
   transition: 1s;
 }
