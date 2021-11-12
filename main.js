@@ -154,28 +154,9 @@ buttonPoint.addEventListener("click", (e) => {
 })
 
 buttonEqual.addEventListener("click", () => {
-  buttonEqual.disabled = true
   input = document.getElementById("result")
   formula = input.textContent
   formula = formula.split(" ").join("")
-  input.innerHTML += " = "
+  input.textContent = ''
   input.innerHTML += eval(formula)
-  buttonOpenParenthesis.value = '';
-  buttonCloseParenthesis.value = '';
-  buttonDivision.value = '';
-  buttonMulti.value = '';
-  buttonPlus.value = '';
-  buttonLess.value = '';
-  button1.value = '';
-  button2.value = '';
-  button3.value = '';
-  button4.value = '';
-  button5.value = '';
-  button6.value = '';
-  button7.value = '';
-  button8.value = '';
-  button9.value = '';
-  button0.value = '';
-  buttonComma.value = '';
-  buttonPoint.value = '';
 })
