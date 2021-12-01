@@ -1,9 +1,10 @@
-html{
+* {
   background: #504750;
+  font-family: cursive;
 }
 
-#header{
-  color:#eee;
+#header {
+  color: #eee;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -12,26 +13,32 @@ html{
   border: 1px solid transparent;
 }
 
-#animate{
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#animate {
   border: 1px solid transparent;
   padding: 1em;
   border-radius: 1em;
   box-shadow: #eee;
 }
-#animate:hover{
+#animate:hover {
   border: 1px solid #6bbd7d;
   color: #6bbd7d;
   transition: 1s;
   border-radius: 1em;
   cursor: pointer;
 }
-.result{
+.result {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.result p{
+.result p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,13 +47,12 @@ html{
   border: 1px solid #fff;
   background: transparent;
   text-align: center;
-  color:#fff;
+  color: #fff;
   font-weight: 700;
-  border:1px solid #fff;
+  border: 1px solid #fff;
 }
 
-
-#display{
+#display {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,36 +61,60 @@ html{
   font-weight: 700;
 }
 
-.container button{
+button {
   cursor: pointer;
-  border: 1px thick transparent;
+  border: 3px thin transparent;
   background: transparent;
   min-width: 10em;
   min-height: 4em;
   color: #fff;
   font-weight: 700;
+  border-radius: 0.5em;
 }
 
-.container button:hover{
+button:hover {
   cursor: pointer;
-  opacity: .6;
-  border: 1px thin transparent;
+  opacity: 0.6;
+  border: 1px solid #ffa;
   background: #fff;
-  color:#504750;
+  color: #000;
   transition: 1s;
   font-weight: bolder;
 }
 
-#equal{
+#equal {
   background: #6bbd7d;
   color: #fff;
   font-weight: bolder;
   border: 1px solid transparent;
 }
 
-#equal:hover{
-  opacity: .7;
+#equal:hover {
+  opacity: 0.7;
   border: 1px solid transparent;
   font-weight: bolder;
   transition: 1s;
+}
+
+#operations {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 5em;
+}
+img {
+  border-radius: 2em;
+  height: 4em;
+  cursor: pointer;
+}
+
+img:hover {
+  opacity: 0.6;
 }
