@@ -75,7 +75,7 @@ button {
 button:hover {
   cursor: pointer;
   opacity: 0.6;
-  border: 1px solid #ffa;
+  border: 0.25px solid #ffa;
   background: #fff;
   color: #000;
   transition: 1s;
