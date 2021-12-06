@@ -36,6 +36,7 @@ buttonOpenP = document.getElementById("openP")
 buttonCloseC = document.getElementById("closeC")
 buttonCloseP = document.getElementById("closeP")
 buttonFat = document.getElementById("fat")
+buttonPow = document.getElementById("pow")
 
 buttonSum.addEventListener("click", (e) => {
   e.preventDefault()
@@ -142,6 +143,11 @@ buttonFat.addEventListener("click", (e) => {
   document.getElementById("operation").textContent += e.target.value
 })
 
+buttonPow.addEventListener("click", (e) => {
+  e.preventDefault()
+  document.getElementById("operation").textContent += e.target.value
+})
+
 buttonClear.addEventListener("click", () => {
   if (document.getElementById("operation").textContent === "") {
     window.alert("A tela já está limpa!")
@@ -156,6 +162,7 @@ buttonEqual.addEventListener("click", () => {
     window.alert("Impossível calcular!")
   } else {
     formula = input.textContent
+    formula.replace("²","**2")
     formula = formula.split(" ").join("")
     input.textContent = ''
     input.innerHTML += eval(formula)
