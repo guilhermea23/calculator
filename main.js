@@ -9,8 +9,8 @@ function factorial(n) {
   if (n <= 1) { //caso base
     return 1
   } else {
-    factorial = n * fatorial(n - 1)
-    return factorial
+    fatorial = n * factorial(n - 1)
+    return fatorial
   }
 }
 buttonEqual = document.getElementById("equal")
@@ -36,6 +36,7 @@ buttonOpenP = document.getElementById("openP")
 buttonCloseC = document.getElementById("closeC")
 buttonCloseP = document.getElementById("closeP")
 buttonFat = document.getElementById("fat")
+buttonPow = document.getElementById("pow")
 
 buttonSum.addEventListener("click", (e) => {
   e.preventDefault()
@@ -142,6 +143,11 @@ buttonFat.addEventListener("click", (e) => {
   document.getElementById("operation").textContent += e.target.value
 })
 
+buttonPow.addEventListener("click", (e) => {
+  e.preventDefault()
+  document.getElementById("operation").textContent += e.target.value
+})
+
 buttonClear.addEventListener("click", () => {
   if (document.getElementById("operation").textContent === "") {
     window.alert("A tela já está limpa!")
@@ -157,6 +163,16 @@ buttonEqual.addEventListener("click", () => {
   } else {
     formula = input.textContent
     formula = formula.split(" ").join("")
+    formula = formula.replace("0²", "0**2")
+    formula = formula.replace("1²", "1**2")
+    formula = formula.replace("2²", "2**2")
+    formula = formula.replace("3²", "3**2")
+    formula = formula.replace("4²", "4**2")
+    formula = formula.replace("5²", "5**2")
+    formula = formula.replace("6²", "6**2")
+    formula = formula.replace("7²", "7**2")
+    formula = formula.replace("8²", "8**2")
+    formula = formula.replace("9²", "9**2")
     input.textContent = ''
     input.innerHTML += eval(formula)
   }
