@@ -162,6 +162,7 @@ buttonEqual.addEventListener("click", () => {
     window.alert("Impossível calcular!")
   } else {
     formula = input.textContent
+    formula.replace("²","**2")
     formula = formula.split(" ").join("")
     formula = formula.replace("0²", "0**2")
     formula = formula.replace("1²", "1**2")
